@@ -1,0 +1,11 @@
+<configuration>
+	<input>
+		<net-file value="fanet.net.xml"/>
+		<route-files value="fanet10sped.rou.xml"/>
+	</input>
+	<time>
+	<begin value="0"/>
+	<end value="90"/>
+	</time>
+</configuration>
+

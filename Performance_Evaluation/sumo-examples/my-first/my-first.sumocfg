@@ -1,0 +1,11 @@
+<configuration>
+    <input>
+        <net-file value="my-first.net.xml"/>
+        <route-files value="my-first.rou.xml"/>
+        <gui-settings-file value="my-first.settings.xml"/>
+    </input>
+    <time>
+        <begin value="0"/>
+        <end value="10000"/>
+    </time>
+</configuration>

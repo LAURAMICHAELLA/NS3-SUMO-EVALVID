@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Thu Feb 21 12:03:04 2019 by Eclipse SUMO duarouter Version 1.1.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="fanet.net.xml"/>
+        <route-files value="flow.xml"/>
+    </input>
+
+    <output>
+        <output-file value="fanet.rou.xml"/>
+        <alternatives-output value="fanet.rou.alt.xml"/>
+    </output>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+   <vType id="type1" accel="0.8" decel="4.5" sigma="0.5" length="5" maxSpeed="10" />
+   <vType id="type2" accel="0.8" decel="4.5" sigma="0.5" length="5" maxSpeed="10" />	
+   <vType id="type3" accel="0.8" decel="4.5" sigma="0.5" length="5" maxSpeed="10" />
+
+   <route id="route1" color="1,1,0" edges="R01 L10"/>
+   <route id="route2" color="1,1,1" edges="R02 L20"/>
+   <route id="route3" color="0,1,1" edges="R03 L30"/>
+
+   <vehicle id="uav1" type="type1" route="route1" depart="0" color="1,0,0" arrivalSpeed="5"/>
+   <vehicle id="uav2" type="type2" route="route2" depart="0" color="0,1,0" arrivalSpeed="5"/>
+   <vehicle id="uav3" type="type3" route="route3" depart="0" color="0,0,1" arrivalSpeed="5"/>
+
+</routes>
+

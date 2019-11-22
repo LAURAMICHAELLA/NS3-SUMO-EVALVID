@@ -1,0 +1,5 @@
+<flows>
+    <interval begin="0" end="3600">
+        <flow id="route0" from="1to2" to="out" number="100"/>
+    </interval>
+</flows>

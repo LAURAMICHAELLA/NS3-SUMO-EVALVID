@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<edges xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/edges_file.xsd">
+<edge id="R01" from="n0" to="n1" />
+<edge id="L10" from="n1" to="n0" />
+<edge id="R03" from="n0" to="n3" />
+<edge id="L30" from="n3" to="n0" />
+<edge id="R02" from="n0" to="n2" />
+<edge id="L20" from="n2" to="n0" />
+</edges>
