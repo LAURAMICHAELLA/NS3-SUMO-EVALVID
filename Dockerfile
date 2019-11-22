@@ -34,13 +34,7 @@ RUN \
   	libxml2-dev \
   	vtun \
   	 curl \
-    fglrx \
-    fglrx-updates \
-    nvidia-173 \
-    nvidia-304-updates \
-    nvidia-304 \
-    nvidia-331-updates \
-	&& rm -rf /var/lib/apt/lists/
+    && rm -rf /var/lib/apt/lists/
 
 RUN \
     apt update && \
