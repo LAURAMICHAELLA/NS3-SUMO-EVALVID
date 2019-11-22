@@ -33,8 +33,7 @@ RUN \
   	libxml2 \
   	libxml2-dev \
   	vtun \
-  	lxc \
-	  curl \
+  	 curl \
     fglrx \
     fglrx-updates \
     nvidia-173 \
@@ -86,4 +85,10 @@ RUN cd ns-3-allinone/ns-3.29 && python test.py
 ARG SUMO_SOURCE=/usr/share/sumo
 ENV SUMO=${SUMO_SOURCE} 
 
-WORKDIR /home/PerformanceEvaluation
+COPY Performance_Evaluation/ns-3.29-examples/scratch/* /ns-3-allinone/ns-3.29/scratch/*
+COPY Performance_Evaluation/evalvid-example-video/highway_cif.mp4 /ns-3-allinone/ns-3.29/*
+COPY Performance_Evaluation/evalvid-example-video/st_highway_cif.st /ns-allinone-3/ns-3.29/*
+COPY Performance_Evaluation/sumo-examples /sumo-1.0.1/sumo-examples
+
+
+WORKDIR /ns-3-allinone
